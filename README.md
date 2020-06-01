@@ -1,5 +1,9 @@
 # My Little CORS Proxy
 
+<div align="center">
+  <img src="./my-little-pony-cors.png" width="500">
+</div>
+
 A tiny workaround for working with remote APIs that don't stamp
 the responses with a relaxed `Access-Control-Allow-Origin`.
 
