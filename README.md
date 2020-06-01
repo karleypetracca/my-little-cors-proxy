@@ -1,7 +1,6 @@
-
 # My Little CORS Proxy
 
-A tiny workaround for working with remote APIs that don't stamp 
+A tiny workaround for working with remote APIs that don't stamp
 the responses with a relaxed `Access-Control-Allow-Origin`.
 
 ## Requirements:
@@ -20,10 +19,9 @@ In your terminal, `cd` into the cloned repo, then run `npm start`.
 
 You should see a message that the proxy is starting up.
 
-
 ## To use:
 
 Update your URLs so that they go through the proxy.
 
 For example, if your remote API url is `https://awesome-cat-gifs/api`, change that
-to `http://localhost:3000/https://awesome-cat-gifs/api`
+to `http://localhost:9000/https://awesome-cat-gifs/api`
