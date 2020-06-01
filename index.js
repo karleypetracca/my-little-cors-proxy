@@ -1,7 +1,21 @@
 var express = require("express");
 var request = require("request");
+var cors = require("cors");
 
 var app = express();
+
+const corsOptions = {
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers":
+    "Origin, X-Requested-With, Content-Type, Accept",
+};
+
+app.use(cors(corsOptions));
+
 app.use("/", function (req, res) {
   var url = req.url.slice(1);
   res.header("Access-Control-Allow-Origin", "*");
